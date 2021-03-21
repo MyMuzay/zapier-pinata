@@ -1,0 +1,19 @@
+module.exports = {
+  id:'fd135604-cc81-4e91-8668-9b8812b1f03c',
+  ipfs_pin_hash:'QmPoN5HEZFRNks9uauC62bbwCqifk8gWk2gtWgdpVWTkGS',
+  size:51957,
+ user_id:'27d69aa4-1ff6-4c6f-a61c-e01c28fb40f9',
+  date_pinned:'2021-03-19T17:50:38.033Z',
+  date_unpinned:null,
+  metadata:{
+     name:'logo-nft.storage.png',
+     keyvalues:null
+  },
+  regions:[
+     {
+        regionId:'NYC1',
+        currentReplicationCount:1,
+        desiredReplicationCount:1
+     }
+  ]
+};
