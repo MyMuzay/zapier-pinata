@@ -1,5 +1,5 @@
 const { API_BASE_URL } = require('../constants');
-const sample  = require('../samples/sample_pin');
+const sample  = require('../samples/sample_list_pin');
 
 const perform = async (z) => {
   const response = await z.request({

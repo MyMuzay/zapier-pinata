@@ -8,7 +8,7 @@ const test = async (z) => {
   });
 
   if (response.status !== 200) {
-    throw new Error('Your API Key is invalid. Please try again.');
+    throw new Error('Your JWT is invalid. Please try again.');
   }
   return response.json;
 };
@@ -18,11 +18,11 @@ module.exports = {
   fields: [
     {
       key: 'jwt',
-      label: 'JWT Token',
+      label: 'Your JWT',
       required: true,
       type: 'string',
       helpText:
-        'Visit your [API Keys](https://pinata.cloud/keys) page to generate your JWT Token.',
+        'Visit your [API Keys](https://pinata.cloud/keys) page to generate your JWT.',
     },
   ],
   test,

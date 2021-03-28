@@ -1,8 +1,8 @@
 const authentication = require('./authentication');
 const middleware = require('./middleware');
-const listPin = require('./triggers/list_pins');
-const addMetadata = require('./creates/add_metadata');
-const pinFile = require('./creates/create_file');
+const newPin = require('./triggers/new_pins');
+const pinMetadata = require('./creates/pin_metadata');
+const pinFile = require('./creates/pin_file');
 
 const App = {
   version: require('./package.json').version, // eslint-disable-line global-require
@@ -17,13 +17,13 @@ const App = {
   resources: {},
 
   triggers: {
-    [listPin.key]: listPin,
+    [newPin.key]: newPin,
   },
 
   searches: {},
 
   creates: {
-    [addMetadata.key]: addMetadata,
+    [pinMetadata.key]: pinMetadata,
     [pinFile.key]: pinFile,
   },
 };
